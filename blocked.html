@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="quiz-page">
+    <div class="quiz-card">
+ 
+    
+      <svg id="lockIcon" viewBox="0 0 64 64" width="64" height="64">
+        <path class="shackle" d="M20 28 V20 a12 12 0 0 1 24 0 V28"
+              fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <rect x="14" y="28" width="36" height="26" rx="6" fill="currentColor"/>
+      </svg>
+      <h2 id="lockedSite"></h2>
+ 
+
+      <div id="subjectPicker">
+        <h1>Pick a subject</h1>
+        <select id="subjectSelect">
+          <option value="satMathHard">SAT Math Hard</option>
+           <option value="satMathMedium">SAT Math Medium</option>
+                     <option value="satMathEasy">SAT Math Easy</option>
+
+
+          <option value="satEnglishHard">SAT English</option>
+          <option value="satEnglishMedium">SAT English Medium</option>
+          <option value="satEnglishEasy">SAT English Easy</option>
+          <option value="biology">Biology</option>
+          <option value="chemistry">Chemistry</option>
+        </select>
+        <button id="startButton">Start Quiz</button>
+      </div>
+ 
+     
+      <div id="quizArea" style="display: none;">
+        <p class="counter" id="counter">0 / 2 correct</p>
+        <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+        <h1 id="questionText"></h1>
+        <ul id="choicesList"></ul>
+        <p class="hint"></p>
+      </div>
+ 
+    </div>
+    <script src="blocked.js"></script>
+  </body>
+</html>
+ 

@@ -1,0 +1,145 @@
+body {
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  background: #12121f;
+  color: #eaeaea;
+  padding: 24px;
+  max-width: 420px;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+p {
+  line-height: 1.6;
+  color: #b8b8c8;
+}
+
+button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 6px 0;
+  display: block;
+  width: 100%;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #33334a;
+  background: #1c1c2e;
+  color: white;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+#choicesList {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+#status {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  background: #1c1c2e;
+  text-align: center;
+}
+
+#savedMsg {
+  color: #4ade80;
+  font-size: 13px;
+}
+body.quiz-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.quiz-card {
+  background: #1c1c2e;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 420px;
+  text-align: center;
+    width: 100%;
+  box-sizing: border-box;
+}
+
+.counter {
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #7a7a8c;
+  margin-top: 20px;
+}
+body.quiz-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-card {
+  background: #1c1c2e;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 420px;
+  text-align: center;
+}
+
+.counter {
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #7a7a8c;
+  margin-top: 20px;
+}
+.correct-answer {
+  background: #22c55e !important;
+}
+
+.wrong-answer {
+  background: #ef4444 !important;
+}
+#lockIcon { color: #6366f1; display: block; margin: 0 auto 12px; }
+#lockIcon .shackle { transition: transform 0.4s ease; transform-origin: 44px 28px; }
+#lockIcon.unlocked { color: #22c55e; }
+#lockIcon.unlocked .shackle { transform: rotate(-35deg) translateY(-4px); }
